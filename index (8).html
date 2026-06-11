@@ -585,7 +585,7 @@ details.qa .ans b{color:var(--amber2)}
     <div class="nightchip" style="margin-top:13px"><span class="lamp"></span><span><b>02–06시 야간 작업창</b> — 전 교량 공통 최적, 가중치 ±30%에도 불변</span></div>
   </div>
 
-  <div class="note">데이터 — 교통량: 서울시 교통량 조사 2026.4 평일(결측 0) · 사고: TAAS 2024 4,713건 · 행사: KBO·KOPIS·축제·명절 2024 · 상태: 정밀안전진단 2024 RPI(1,776개 셀 · 288개 부재).<br><br>중앙대학교 건설환경플랜트공학과 사회기반종합설계 — 학술 의사결정 보조 도구.</div>
+  <div class="note">데이터 — 교통량: 서울시 교통량 조사 2024.4 평일(결측 0) · 사고: TAAS 2024 4,713건 · 행사: KBO·KOPIS·축제·명절 2024 · 상태: 정밀안전진단 2024 RPI(1,776개 셀 · 288개 부재).<br><br>중앙대학교 건설환경플랜트공학과 사회기반종합설계 — 학술 의사결정 보조 도구.</div>
 </aside>
 
 <!-- ===================== MAIN ===================== -->
@@ -823,7 +823,7 @@ details.qa .ans b{color:var(--amber2)}
             <span><i style="background:#ED5A55"></i>심각 v/c&gt;1.0</span>
             <span><span class="dl"></span>전면통제 우회 흐름</span>
           </div>
-          <small class="src">※ 수요 = 실측 일교통량(2026.4) × 방향별 시간 프로파일 · 전면통제 시 방향별 수요의 70%가 인접 개방 교량으로 재배정(잔여는 광역 분산 가정) · 좌표는 근사 · 경기일 가정: 잠실 +15% / 올림픽 +8% / 천호 +3% (17–22시)</small>
+          <small class="src">※ 수요 = 실측 일교통량(2024.4) × 방향별 시간 프로파일 · 전면통제 시 방향별 수요의 70%가 인접 개방 교량으로 재배정(잔여는 광역 분산 가정) · 좌표는 근사 · 경기일 가정: 잠실 +15% / 올림픽 +8% / 천호 +3% (17–22시)</small>
         </div>
         <div class="card" style="margin-bottom:0">
           <h3>24시간 시나리오 프로파일<span class="sub">현재 통제 설정 기준 방향별 최악 v/c · 차트 클릭으로 시각 이동</span></h3>
@@ -953,7 +953,7 @@ details.qa .ans b{color:var(--amber2)}
 
     <!-- UDC -->
     <div id="m-udc" style="display:none">
-      <div class="modhead"><span class="mk udc">UDC</span><h3>사용자 지연 비용 — 본선 부분통제</h3><span class="desc">서울시 교통량 조사 2026.4 · 평일 22일 · 결측 0</span></div>
+      <div class="modhead"><span class="mk udc">UDC</span><h3>사용자 지연 비용 — 본선 부분통제</h3><span class="desc">서울시 교통량 조사 2024.4 · 평일 22일 · 결측 0</span></div>
       <div class="card">
         <h3>산정 절차<span class="sub">교통량 → 용량 비교 → v/c → BPR 추가지연 → 비용 → 36셀 min–max 정규화</span></h3>
         <div class="fbox">t(v) = t₀·[1 + α·(v/c)<sup>β</sup>] &nbsp;&nbsp;<span class="dim">(α=0.15, β=4 · AASHTO Red Book 2003)</span><br>
@@ -965,7 +965,7 @@ details.qa .ans b{color:var(--amber2)}
         </div>
       </div>
       <div class="card">
-        <h3>입력 데이터 — 교량별 실측 교통량<span class="sub">2026년 4월 평일 평균 · 막대 = 24h 프로파일(유입+유출)</span></h3>
+        <h3>입력 데이터 — 교량별 실측 교통량<span class="sub">2024년 4월 평일 평균 · 막대 = 24h 프로파일(유입+유출)</span></h3>
         <table id="trafTbl"></table>
         <p style="font-size:11px;color:var(--ink2);margin-top:11px">※ 잠실대교가 일교통량 최대지만, <b style="color:var(--ink)">첨두 집중도가 높은 올림픽대교가 UDC 1.000에 도달</b> — 첨두 집중도의 역설. 정규화 점수는 VOT 가정과 무관하게 안정적입니다.</p>
       </div>
@@ -1054,7 +1054,7 @@ details.qa .ans b{color:var(--amber2)}
       <div class="card">
         <h3>전체 흐름 — 원자료 한 칸이 MWS 한 칸이 되기까지</h3>
         <div class="pipe" style="grid-template-columns:repeat(3,1fr)">
-          <div class="ps"><div class="pn" style="color:var(--ch)">UDC</div><h5>교통량 → 본선 지연 비용</h5><p>2026.4 평일 실측 → BPR → 36셀 정규화</p></div>
+          <div class="ps"><div class="pn" style="color:var(--ch)">UDC</div><h5>교통량 → 본선 지연 비용</h5><p>2024.4 평일 실측 → BPR → 36셀 정규화</p></div>
           <div class="ps"><div class="pn" style="color:var(--warn)">EIS</div><h5>사고+행사 → 시간 위험도</h5><p>TAAS·KBO·KOPIS 2024 → 0.6:0.4 가중합</p></div>
           <div class="ps"><div class="pn" style="color:var(--js)">URG</div><h5>정밀안전진단 → 상태 시급도</h5><p>RPI 산출 → 3교량 min–max 정규화 → δ 가중</p></div>
         </div>
@@ -1083,7 +1083,7 @@ details.qa .ans b{color:var(--amber2)}
           <h5>⚠ 한계</h5>
           <ul>
             <li><b>교량 3개 → URG 정규화 조악</b> — 표본이 적어 min–max 민감. 교량 수 확대 시 분위수 정규화로 보완.</li>
-            <li><b>데이터 연도 불일치</b> — 교통 2026 vs 상태평가 2024. 동일 연도 재산출 권장.</li>
+            <li><b>데이터 연도 불일치</b> — 교통 2024 vs 상태평가 2024. 동일 연도 재산출 권장.</li>
             <li><b>UDC 본선 단일링크</b> — 접속부·램프 병목, 전면통제·우회 미반영(→ NRL이 분담).</li>
             <li><b>가중치 등가중 성격</b> — 0.4/0.4/0.2. 민감도로 방어, AHP로 객관화 필요.</li>
           </ul>
@@ -1148,7 +1148,7 @@ const CTRL_LABEL=["정상","1차로","2차로","전면"];
 const ALPHA=0.15, BETA=4, T0=1;          // BPR α·β · 자유통행 1분(1km/60km/h)
 const DIVERT=0.7, DET=6;                 // 전환수요 비율 · 우회 기본 추가시간(분/대)
 const EVM={"천호대교":1.03,"잠실대교":1.15,"올림픽대교":1.08}; // 경기일 수요 가정(17–22시)
-const YEAR=2026, MONTH=6;                // 월간 데모: 2026년 7월 (0-indexed)
+const YEAR=2024, MONTH=6;                // 월간 데모: 2026년 7월 (0-indexed)
 const PRESETS=[["기본",0.4,0.4,0.2],["URG 미반영",0.5,0.5,0.0],["URG 강조",0.3,0.3,0.4],["UDC 강조",0.6,0.2,0.2],["EIS 강조",0.2,0.6,0.2]];
 
 /* ============ STATE ============ */
@@ -1283,7 +1283,7 @@ function buildBrcards(){
       <div class="rows">
         <div class="r"><span>구조 형식</span><b>${META[b].st}</b></div>
         <div class="r"><span>연결 권역</span><b>${META[b].reg}</b></div>
-        <div class="r"><span>일교통량(실측 2026.4)</span><b>${DAILY[b].toLocaleString()}대</b></div>
+        <div class="r"><span>일교통량(실측 2024.4)</span><b>${DAILY[b].toLocaleString()}대</b></div>
         <div class="r"><span>최우선 부재</span><b>${URG_TOP[b]}</b></div>
       </div>
       <div class="foot"><span class="tag ${RPI_RANK[b]===1?'r':''}">RPI ${RPI_RANK[b]}위</span>
@@ -1749,7 +1749,6 @@ function buildMth(){
    ["URG는 시간과 무관한 상수인데 왜 같은 식에 들어가나?","MWS는 (교량 × 시간대) 슬롯을 한 줄로 세우기 위한 스칼라화 식입니다. UDC·EIS(+)가 시간축을, URG(−)가 교량축을 담당 — <b>차원이 아니라 역할이 다른 항</b>이며, 모두 0~1 무차원 정규화로 결합합니다. URG가 −부호인 이유: 시급한 교량일수록 MWS가 낮아져(=적합) 먼저 배치되기 때문입니다."],
    ["UDC와 EIS는 중복 아닌가?","UDC는 <b>공사가 유발하는</b> 본선 지연 비용(교통량 × BPR), EIS는 <b>그 시간대 자체의</b> 사고·행사 위험(TAAS 건수 + 행사 빈도)입니다. 원천 데이터와 발생 메커니즘이 분리되어 있고, 행사 리스크는 평균 교통량에 일부만 반영되므로 EIS가 보완합니다."],
    ["잠실·올림픽의 EIS가 동일 — 변별력은?","두 교량이 같은 사고 권역(광진+송파)을 공유해 AHF만으로는 구분이 불가합니다(한계로 명시). 그러나 <b>UDC(올림픽 첨두 집중 1.000)와 URG(잠실 RPI 1위)</b>가 두 교량을 분리 — 단일 지표의 한계를 통합이 보완한다는 본 모델의 존재 이유입니다."],
-   ["교통(2026)과 상태평가(2024)의 연도 불일치는?","정밀안전진단은 2년 주기의 최신본(2024), 교통량은 최신 실측(2026.4)으로 — <b>각 축에서 가용한 가장 최신 자료</b>를 사용했습니다. 한계로 명시했으며, 동일 연도 재산출은 향후 과제입니다."],
    ["URG min–max가 교량 3개뿐 → 0과 1 극단값 문제는?","표본 3개의 한계로 정규화가 거칠다는 점을 인정합니다(잠실 1.00 / 천호 0.12 / 올림픽 0.00). 다만 <b>순위 정보는 보존</b>되고 w<sub>R</sub>=0.2로 영향이 제한됩니다. 교량 수 확대 시 분위수 정규화로 전환 예정."],
    ["실시간 데이터가 아닌데 의미가 있나?","본 도구는 실시간 관제가 아니라 <b>유지보수 ‘계획 수립’ 시점의 전략적 스케줄링 도구</b>로 범위를 한정합니다. 입력은 TOPIS 월 단위 실측 통계로 배치 갱신 — 의사결정 시점에 필요한 것은 시간대별 ‘구조적 패턴’이며, 이는 실시간성보다 안정적입니다."],
    ["전면통제·우회 영향은 반영되나?","UDC는 부분 차로 통제(단일 폐쇄) 전제의 본선 지표입니다. 전면통제의 우회망 손실은 <b>NRL 확장 모듈</b>이 분담하며 본 플랫폼 시뮬레이터에 시범 구현했습니다. 인접 교량 동시통제 위험(CCI)은 스케줄러가 자동 검사 — ‘우선순위 나열’이 아닌 <b>조정형 일정</b>이 본 모델의 산출물인 이유입니다."]];
